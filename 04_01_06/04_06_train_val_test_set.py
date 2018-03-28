@@ -27,14 +27,20 @@ scores = cross_val_score(clf,
                 cv = 10)
 scores.mean()
 
-
+"""
+TODO_00:正則化の値を変化させて、最適なモデルを探す
+         - 学習モデル：LogisticRegression
+         - 学習サイズ：crossvalidation:cross_val_score
+"""
 C_range_exp = np.linspace(start=-15,stop=20,num=36)
+C_range_exp
 C_range = 10 ** C_range_exp
 C_range
+C_range.shape
 all_scores_mean = []
 all_scores_std = []
 clf
-
+# C(正則化)の値を1e-15~1e+20まで変化させて、平均スコアと標準偏差を表示
 for C in C_range:
     clf.C = C
     scores = cross_val_score(clf,
