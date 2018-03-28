@@ -1,3 +1,9 @@
+"""
+TODO_00:
+- 学習モデル:clf = LogisticRegression
+- 訓練サイズと学習サイズの分割法:cv = Leave_one_group_out
+"""
+
 import numpy as np
 from sklearn.datasets import load_breast_cancer
 data = load_breast_cancer()
@@ -12,7 +18,7 @@ clf = linear_model.LogisticRegression()
 
 from sklearn.model_selection import LeaveOneOut
 loocv = LeaveOneOut()
-
+loocv
 train_index,test_index = next(loocv.split(X,y))
 y.size,train_index.size,test_index.size,
 
@@ -23,9 +29,9 @@ scores = cross_val_score(clf,
 
 scores.mean()*100
 scores.std()*100
-
-# leave p(2) outは終わらない(組み合わせが大量にある為)
-# LeaveOneOutを使う
+"""
+TODO_00:leave p(2) outは終わらない(組み合わせが大量にある為)
+"""
 from sklearn.model_selection import LeavePOut
 loocv = LeavePOut(2)
 
