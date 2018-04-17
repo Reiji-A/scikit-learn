@@ -1,3 +1,9 @@
+"""
+TODO_00:
+- 学習モデル:clf = LogisticRegression
+- 訓練サイズと学習サイズの分割法:cv = cross_val_score
+"""
+
 import numpy as np
 
 from sklearn.datasets import load_breast_cancer

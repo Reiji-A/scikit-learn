@@ -1,9 +1,18 @@
+"""
+TODO_00:外れ値と値無しをどうするか
+TODO_01:データをインポート
+TODO_02:matplotlibでデータを描画
+TODO_03:外れ値と値無し(NaN)をの確認
+TODO_04:値無しを除外
+TODO_05:外れ値を除外
+TODO_06:値無しを平均値で埋める
+TODO_07:値無しを中央値で埋める
+"""
 import numpy as np
 import pandas as pd
 # csvファイルをインポート
 data_path = "/Users/macuser/Documents/Python/scikit-learn/udemy_machine_learning/20170628ipynb/"
 !cat /Users/macuser/Documents/Python/scikit-learn/udemy_machine_learning/20170628ipynb/2D_example_dame.csv
-
 with open(data_path +"2D_example_dame.csv") as f:
     print(f.read())
 # ヘッダーがない場合
@@ -15,7 +24,7 @@ data = np.loadtxt(data_path + "2D_example_dame.csv",delimiter=",")
 data
 y = data[:,0].astype(int)
 y
-
+y.shape
 X = data[:,1:3]
 X
 

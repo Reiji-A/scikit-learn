@@ -66,6 +66,7 @@ plotBoundary(X,clf)
 # サポートベクトマシーン(線形)で分類
 from sklearn import svm
 clf = svm.SVC(kernel='linear').fit(X,y)
+clf
 plt.scatter(X[:,0],X[:,1],marker="o",c=y,s=50,edgecolors="k")
 plotBoundary(X,clf)
 # サポートベクトマシン(Gaussianカーネル)で分類

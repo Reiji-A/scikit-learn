@@ -34,6 +34,7 @@ y_test = y[test_index]
 
 # 識別器に学習
 clf.fit(X_train,y_train)
+
 # 学習データのテスト
 print(clf.score(X_train,y_train))
 # テストデータのテスト

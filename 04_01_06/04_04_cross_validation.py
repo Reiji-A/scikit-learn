@@ -1,7 +1,7 @@
 """
 TODO_00:学習データでの汎化性能を確かめる為、cross_validation法を用いる
 TODO_01:ガンのデータをインポート
-TODO_02:KFoldで10つのサイズにデータを分割させcross_validationで学習させるモデルを作成
+TODO_02:KFoldで10つのサイズにデータを分割させLogisticRegressionで学習させるモデルを作成
 TODO_03:KFoldのモデルを利用して訓練用、学習用のデータを分割するindexを作成し生データに適用
 TODO_04:ロジスティック回帰で10回訓練データで学習させる
 TODO_05:10回分のスコアを確認

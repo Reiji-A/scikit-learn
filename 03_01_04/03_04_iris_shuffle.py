@@ -21,10 +21,11 @@ y = data.target
 ss = ShuffleSplit(n_splits=10,#分割を10個作成
                   train_size=0.5,#訓練サイズを0.5
                   test_size=0.5,#テストサイズを0.5
-                  random_state=0#再現用に乱数を規定)
+                  random_state=0)#再現用に乱数を規定
+ss
 # TODO_03
 clf = linear_model.LogisticRegression()
-
+clf
 # TODO_04~06
 scores = []
 for train_index,test_index in ss.split(X):#TODO_04
@@ -36,6 +37,7 @@ for train_index,test_index in ss.split(X):#TODO_04
     scores.append(score)
 
 scores = np.array(scores)
+scores.shape
 print(scores)
 scores.mean()
 scores.std()

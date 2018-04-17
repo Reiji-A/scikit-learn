@@ -39,7 +39,7 @@ loocv = LeavePOut(2)
 group = np.array(list(range(50))*12)
 group = np.sort(group[:y.size])
 group.size
-group
+
 from sklearn.model_selection import LeaveOneGroupOut
 loocv = LeaveOneGroupOut()
 
