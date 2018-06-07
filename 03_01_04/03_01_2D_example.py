@@ -1,5 +1,5 @@
 import numpy as np
-datapath = "/Users/macuser/Documents/Python/scikit-learn/udemy_machine_learning/20170628ipynb/"
+datapath = ""
 with open(datapath + "2D_example.csv") as f:
     print(f.read())
 
